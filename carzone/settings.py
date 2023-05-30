@@ -57,7 +57,7 @@ ROOT_URLCONF = 'carzone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates'),os.path.join(BASE_DIR,'static')],
+        'DIRS': [os.path.join(BASE_DIR,'templates'),os.path.join(BASE_DIR,'static'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,5 +126,5 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 STATIC_ROOT= os.path.join(BASE_DIR,'static')
-STATIC_FILE=[os.path.join(BASE_DIR,'static'),]
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'carzone/static'),]
 print(TEMPLATE_DIRS)
